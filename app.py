@@ -28,6 +28,7 @@ def dashboard():
     projetos = c.fetchall()
     conn.close()
     return render_template('dashboard.html', projetos=projetos)
+# Comentário para forçar novo deploy
 
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
