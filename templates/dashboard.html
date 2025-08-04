@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Projetos Cadastrados</h2>
+    <a href="/cadastro">Novo Projeto</a>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>Cliente</th><th>Email</th><th>Sistema</th><th>Valor</th>
+        </tr>
+        {% for projeto in projetos %}
+        <tr>
+            <td>{{ projeto[0] }}</td>
+            <td>{{ projeto[1] }}</td>
+            <td>{{ projeto[2] }}</td>
+            <td>{{ projeto[3] }}</td>
+            <td>{{ projeto[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
